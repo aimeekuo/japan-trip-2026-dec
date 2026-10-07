@@ -3,7 +3,7 @@
  */
 
 (function () {
-  const STORAGE_KEY = 'trip_japan_2026_dec_v1';
+  const STORAGE_KEY = 'trip_japan_2026_dec_v2';
 
   const CATEGORY_MAP = {
     attraction: { label: '景點', icon: 'map-pin', bg: 'bg-copper-50', text: 'text-copper-700', border: 'border-copper-200' },

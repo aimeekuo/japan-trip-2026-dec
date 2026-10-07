@@ -1,9 +1,9 @@
-// 2026 年底 京都・日光鬼怒川・東京（12/17–12/23）
-// ⚠️ 機票、日光住宿、東京住宿、新幹線、特急、吉卜力票皆尚未訂；交通時間為估算，請以實際查詢為準
+// 2026 年底 京都・東京（12/17–12/23）
+// ⚠️ 機票、東京住宿、新幹線、吉卜力票皆尚未訂；交通時間為估算，請以實際查詢為準
 const defaultTripData = {
   id: "trip-japan-2026-dec",
-  title: "🍁 2026 年底 京都・日光・東京 7D6N",
-  destination: "日本 京都・日光鬼怒川・東京",
+  title: "🍁 2026 年底 京都・東京 7D6N",
+  destination: "日本 京都・東京",
   startDate: "2026-12-17",
   endDate: "2026-12-23",
   currency: "TWD",
@@ -12,7 +12,7 @@ const defaultTripData = {
   homeCurrencySymbol: "NT$",
   exchangeRate: 1,
   members: ["Aimee", "Farl"],
-  overviewNote: "12/17 抵達京都（3 晚）；12/18 任天堂博物館（10:00 入場）＋宇治＋伏見稻荷；12/19 嵐山與東山；12/20 新幹線到東京後轉東武線住日光鬼怒川溫泉一晚；12/21 回東京、14:00 三鷹之森吉卜力美術館，住 Conrad Tokyo；12/22 teamLab Planets＋麻布台之丘；12/23 羽田返台北。",
+  overviewNote: "12/17 抵達京都（3 晚）；12/18 任天堂博物館（10:00 入場）＋宇治＋伏見稻荷；12/19 嵐山與東山；12/20 新幹線到東京，入住 Conrad Tokyo（3 晚），下午自由安排；12/21 14:00 三鷹之森吉卜力美術館；12/22 teamLab Planets＋麻布台之丘；12/23 羽田返台北。",
 
   accommodations: [
     {
@@ -26,35 +26,21 @@ const defaultTripData = {
       checkIn: "2026-12-17 15:00",
       checkOut: "2026-12-20 11:00",
       bookingRef: "Booking.com 已訂・標準雙床房 1 間",
-      notes: "住客：2 位成人，3 晚。\n費用：約 TWD 9,304（¥45,987），扣除優惠後以住宿幣別計約 ¥40,970（約 TWD 8,289）；住宿稅另付，付款細節請以 Booking.com 訂單為準。\n入住時間 15:00–22:00，晚於 22:00 請先通知飯店。\n不可免費取消或更改；不含早餐；無停車位；免費 WiFi。\n12/19–12/20 可請櫃檯協助用宅急便把大件行李寄到 Conrad Tokyo（12/21 收件）。",
+      notes: "住客：2 位成人，3 晚。\n費用：約 TWD 9,304（¥45,987），扣除優惠後以住宿幣別計約 ¥40,970（約 TWD 8,289）；住宿稅另付，付款細節請以 Booking.com 訂單為準。\n入住時間 15:00–22:00，晚於 22:00 請先通知飯店。\n不可免費取消或更改；不含早餐；無停車位；免費 WiFi。",
       mapQuery: "Kyohotel Kishotei Goshominami"
     },
     {
-      id: "hotel-2",
-      label: "日光／鬼怒川 1 晚 (12/20) ⚠️ 待訂",
-      name: "鬼怒川或日光溫泉旅館（待選）",
-      enName: "建議含晚餐會席＋大浴場",
-      jpAddress: "",
-      address: "尚未訂房（鬼怒川溫泉或日光站周邊）",
-      phone: "",
-      checkIn: "2026-12-20 15:00",
-      checkOut: "2026-12-21 10:00",
-      bookingRef: "尚未訂房",
-      notes: "選址建議：12/21 早上不逛東照宮，只要快速回東京，所以選鬼怒川溫泉最省事（旅館多）。\n12/20 要在 17:00–17:30 前入館吃晚餐。\n⚠️ 吉卜力 12/21 的票要 11/10 才開賣，在拿到票以前建議選可免費取消的方案。",
-      mapQuery: "鬼怒川溫泉"
-    },
-    {
       id: "hotel-3",
-      label: "東京 2 晚 (12/21–12/23) ⚠️ 待訂",
+      label: "東京 3 晚 (12/20–12/23) ⚠️ 待訂",
       name: "Conrad Tokyo（預計）",
       enName: "汐留，近新橋站、汐留站",
       jpAddress: "東京都港区東新橋1-9-1",
       address: "1 Chome-9-1 Higashishinbashi, Minato City, Tokyo",
       phone: "",
-      checkIn: "2026-12-21 15:00",
+      checkIn: "2026-12-20 15:00",
       checkOut: "2026-12-23 11:00",
       bookingRef: "尚未訂房",
-      notes: "位置優勢：汐留站搭百合海鷗號直達 teamLab Planets（新豐洲）；12/23 去羽田可搭都營淺草線或單軌電車；步行可到銀座。\n12/21 吉卜力在吉祥寺，往返約 35–45 分鐘。\n房價年底較高，吉卜力票未確認前建議選可免費取消的方案。電話與確切地址請以訂房確認信為準。",
+      notes: "位置優勢：汐留站搭百合海鷗號直達 teamLab Planets（新豐洲）；12/23 去羽田可搭都營淺草線或單軌電車（約 30 分鐘）；步行可到銀座。\n12/20 搭新幹線到東京後，行李可直接帶到飯店（12/20 可提早寄放），不需要先寄。\n12/21 吉卜力在吉祥寺，往返約 35–45 分鐘。\n房價年底較高，吉卜力票未確認前建議選可免費取消的方案。電話與確切地址請以訂房確認信為準。",
       mapQuery: "Conrad Tokyo"
     }
   ],
@@ -92,10 +78,10 @@ const defaultTripData = {
       airline: "JR 東海",
       departureAirport: "京都站",
       departureTime: "約 9:00 前後",
-      arrivalAirport: "東京站（約 2 小時 15 分）",
+      arrivalAirport: "東京站（約 2 小時 15 分），再到新橋入住",
       arrivalTime: "待定",
       bookingRef: "⚠️ 尚未訂（約出發前 1 個月開放）",
-      notes: "可用 SmartEX 或 EX 預約。到東京後轉搭 JR 中央線到新宿，再搭 JR・東武直通特急到鬼怒川／日光（約 2 小時）；也可由淺草搭東武 Spacia。"
+      notes: "可用 SmartEX 或 EX 預約。抵達東京站後，轉 JR 到新橋（約 5 分鐘），再步行或搭計程車到 Conrad Tokyo。"
     },
     {
       type: "吉卜力美術館門票",
@@ -290,11 +276,11 @@ const defaultTripData = {
         {
           id: "s3-5",
           time: "晚上",
-          title: "整理行李，寄大件行李到 Conrad Tokyo",
+          title: "整理行李，準備隔天搬到東京",
           category: "hotel",
-          location: "京都飯店櫃檯",
+          location: "京都飯店",
           mapQuery: "Kyohotel Kishotei Goshominami",
-          note: "請櫃檯協助用宅急便把大件行李寄到東京飯店，指定 12/21 送達。去日光只帶小包。需填寫收件飯店名稱、地址與預計入住日。\n⚠️ 東京住宿尚未訂，要先訂好才能寄。",
+          note: "明天 12/20 要退房（11:00 前）搭新幹線，今晚先整理好行李。東京住宿三晚不用換飯店。\n⚠️ 東京住宿尚未訂。",
           completed: false
         }
       ]
@@ -303,8 +289,8 @@ const defaultTripData = {
       dayNumber: 4,
       date: "2026-12-20",
       weekday: "週日",
-      theme: "京都 ➔ 東京 ➔ 日光鬼怒川溫泉",
-      weather: "日光約 −3–5°C，可能下雪",
+      theme: "京都 ➔ 東京・入住 Conrad・下午自由安排",
+      weather: "東京約 4–12°C",
       spots: [
         {
           id: "s4-1",
@@ -313,39 +299,38 @@ const defaultTripData = {
           category: "transport",
           location: "京都站",
           mapQuery: "京都站",
-          note: "新幹線尚未訂，約 2 小時 15 分抵達東京。把握旅館晚餐時間，早上不要拖。",
+          note: "新幹線尚未訂，約 2 小時 15 分抵達東京。到東京後轉 JR 到新橋，再到飯店。",
           completed: false,
-          transitToNext: "東京站轉中央線到新宿約 15 分鐘"
+          transitToNext: "東京站到新橋約 5 分鐘"
         },
         {
           id: "s4-2",
-          time: "約 11:30 - 15:30",
-          title: "新宿 ➔ 東武特急 ➔ 鬼怒川溫泉",
-          category: "transport",
-          location: "新宿 ➔ 鬼怒川溫泉站",
-          mapQuery: "鬼怒川温泉駅",
-          note: "JR 與東武直通特急（新宿↔日光／鬼怒川）約 2 小時，請事先訂位。\n也可從淺草搭東武線。時間與班次請用 Navitime 或 Jorudan 確認。",
-          completed: false,
-          transitToNext: "旅館接駁車或步行"
+          time: "約 12:00 - 13:00",
+          title: "抵達 Conrad Tokyo，寄放行李",
+          category: "hotel",
+          location: "汐留",
+          mapQuery: "Conrad Tokyo",
+          note: "⚠️ 飯店尚未訂。入住通常 15:00，可先寄放行李再出門。",
+          completed: false
         },
         {
           id: "s4-3",
-          time: "約 15:30 - 17:30",
-          title: "入住溫泉旅館，先泡湯",
-          category: "hotel",
-          location: "鬼怒川溫泉",
-          mapQuery: "鬼怒川温泉",
-          note: "⚠️ 旅館尚未訂。17:00–17:30 前要入館，晚餐為會席料理。",
+          time: "下午",
+          title: "【待挑選】東京下午自由安排",
+          category: "attraction",
+          location: "東京",
+          mapQuery: "東京",
+          note: "這個時段先留空，等你選好再填。想法（尚未決定）：淺草與晴空塔、上野、銀座、東京鐵塔、澀谷。\n⚠️ 12/21 要趕 14:00 吉卜力，12/22 是 teamLab 與麻布台之丘，所以 12/20 下午與晚上是東京其他行程的唯一空檔。",
           completed: false
         },
         {
           id: "s4-4",
-          time: "18:00",
-          title: "旅館會席晚餐，夜間泡湯",
+          time: "晚上",
+          title: "晚餐（待決定）",
           category: "food",
-          location: "旅館",
-          mapQuery: "鬼怒川温泉",
-          note: "早點休息，隔天早上要趕回東京。",
+          location: "銀座／新橋",
+          mapQuery: "新橋 居酒屋",
+          note: "新橋有居酒屋街，銀座餐廳多。週日部分店家休息，請先查營業日。",
           completed: false
         }
       ]
@@ -354,19 +339,19 @@ const defaultTripData = {
       dayNumber: 5,
       date: "2026-12-21",
       weekday: "週一",
-      theme: "回東京・14:00 吉卜力美術館・入住 Conrad Tokyo",
+      theme: "上午自由・14:00 吉卜力美術館",
       weather: "東京約 4–12°C",
       spots: [
         {
           id: "s5-1",
-          time: "約 9:00 - 11:30",
-          title: "旅館早餐、退房，搭特急直達新宿",
-          category: "transport",
-          location: "鬼怒川 ➔ 新宿",
-          mapQuery: "新宿駅",
-          note: "約 2 小時。不逛東照宮，專心趕下午的吉卜力。",
+          time: "上午",
+          title: "【待挑選】上午自由安排，11:00 出發往吉祥寺",
+          category: "attraction",
+          location: "東京",
+          mapQuery: "東京",
+          note: "從汐留到吉祥寺約 35–45 分鐘（新橋→東京→中央線快速），建議 11:00–11:30 出發，午餐在吉祥寺吃。",
           completed: false,
-          transitToNext: "搭中央線到吉祥寺約 15–20 分鐘"
+          transitToNext: "新橋搭 JR 到東京，轉中央線快速到吉祥寺"
         },
         {
           id: "s5-2",
@@ -375,7 +360,6 @@ const defaultTripData = {
           category: "food",
           location: "吉祥寺",
           mapQuery: "吉祥寺",
-          note: "行李已寄到飯店，身上只帶小包。",
           completed: false,
           transitToNext: "步行約 15 分鐘（經井之頭公園）"
         },
@@ -404,11 +388,10 @@ const defaultTripData = {
         {
           id: "s5-5",
           time: "19:00 後",
-          title: "入住 Conrad Tokyo，新橋或銀座晚餐",
-          category: "hotel",
+          title: "回 Conrad Tokyo，新橋或銀座晚餐",
+          category: "food",
           location: "汐留",
           mapQuery: "Conrad Tokyo",
-          note: "⚠️ 飯店尚未訂。確認從京都寄來的行李已送達。",
           completed: false
         }
       ]
@@ -500,14 +483,11 @@ const defaultTripData = {
       items: [
         { id: "t1", name: "訂去程機票（12/17 抵達）與回程羽田（12/23）", checked: false },
         { id: "t2", name: "11/10 10:00 (日本時間) 搶吉卜力 12/21 14:00 場次，2 張", checked: false },
-        { id: "t3", name: "訂東京 Conrad Tokyo 12/21–12/23（先選可免費取消）", checked: false },
-        { id: "t4", name: "訂日光／鬼怒川溫泉旅館 12/20 一晚（含晚餐）", checked: false },
+        { id: "t3", name: "訂東京 Conrad Tokyo 12/20–12/23 三晚（先選可免費取消）", checked: false },
         { id: "t5", name: "訂新幹線京都→東京（12/20）", checked: false },
-        { id: "t6", name: "訂 JR・東武直通特急座位（新宿→鬼怒川，12/20 去、12/21 回）", checked: false },
         { id: "t7", name: "買 teamLab Planets 門票 12/22 早場", checked: false },
         { id: "t8", name: "確認任天堂博物館第二張票（Farl）", checked: false },
         { id: "t9", name: "12/17 14:00 後發行任天堂 QR Code 並截圖", checked: false },
-        { id: "t10", name: "請京都飯店用宅急便寄大件行李到 Conrad（12/21 送達）", checked: false }
       ]
     },
     {
@@ -532,11 +512,10 @@ const defaultTripData = {
     {
       category: "冬季衣物與雜物",
       items: [
-        { id: "p10", name: "保暖外套、發熱衣、手套、圍巾（日光 0°C 左右）", checked: false },
-        { id: "p11", name: "防滑好走的鞋（日光路面可能結冰）", checked: false },
+        { id: "p10", name: "保暖外套、發熱衣、手套、圍巾（京都、東京約 0–12°C）", checked: false },
+        { id: "p11", name: "好走的鞋（任天堂、嵐山、清水寺步行多）", checked: false },
         { id: "p12", name: "暖暖包、護唇膏、乳液", checked: false },
         { id: "p13", name: "短褲或易捲褲管的褲子（teamLab Planets 水中行走）", checked: false },
-        { id: "p14", name: "小背包（去日光只帶 1 晚用品）", checked: false },
         { id: "p15", name: "個人藥品與暈車藥", checked: false }
       ]
     }
