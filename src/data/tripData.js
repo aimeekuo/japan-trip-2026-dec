@@ -1,5 +1,5 @@
 // 2026 年底 京都・東京（12/17–12/23）
-// ⚠️ 機票、東京住宿、新幹線、吉卜力票皆尚未訂；交通時間為估算，請以實際查詢為準
+// ⚠️ 東京住宿、新幹線、吉卜力票尚未訂；機票已訂；交通時間為估算，請以實際查詢為準
 const defaultTripData = {
   id: "trip-japan-2026-dec",
   title: "🍁 2026 年底 京都・東京 7D6N",
@@ -50,14 +50,14 @@ const defaultTripData = {
     {
       type: "去程機票",
       date: "2026-12-17 (週四)",
-      flightNo: "⚠️ 尚未訂",
-      airline: "",
-      departureAirport: "台北 (桃園機場)",
-      departureTime: "待定",
-      arrivalAirport: "關西機場 KIX（預設）",
-      arrivalTime: "待定",
-      bookingRef: "尚未訂票",
-      notes: "目標：12/17 下午前抵達，趕得及在京都入住（15:00–22:00）並發行任天堂 QR Code。關西機場搭 Haruka 到京都約 75 分鐘。"
+      flightNo: "CI156",
+      airline: "中華航空",
+      departureAirport: "桃園 TPE 第二航廈",
+      departureTime: "08:05",
+      arrivalAirport: "關西 KIX 第一航廈",
+      arrivalTime: "11:35",
+      bookingRef: "✅ 已購票・經濟艙",
+      notes: "抵達後入境、領行李約 1–1.5 小時，再搭 Haruka 到京都約 75–80 分鐘，預計 14:30–15:30 抵達飯店（15:00 起可入住）。\n兩人同班機。"
     },
     {
       type: "任天堂博物館門票",
@@ -98,14 +98,14 @@ const defaultTripData = {
     {
       type: "回程機票",
       date: "2026-12-23 (週三)",
-      flightNo: "⚠️ 尚未訂",
-      airline: "",
-      departureAirport: "羽田機場 HND（預設）",
-      departureTime: "待定",
-      arrivalAirport: "台北",
-      arrivalTime: "待定",
-      bookingRef: "尚未訂票",
-      notes: "若航班是早班機，12/22 不要排太晚。從汐留去羽田約 30 分鐘。"
+      flightNo: "CI221",
+      airline: "中華航空",
+      departureAirport: "東京羽田 HND 第三航廈",
+      departureTime: "14:15",
+      arrivalAirport: "台北松山 TSA 第一航廈",
+      arrivalTime: "17:15",
+      bookingRef: "✅ 已購票・經濟艙",
+      notes: "建議 12:00 前抵達羽田第三航廈。從汐留或新橋出發約 30 分鐘，最晚 10:30–11:00 離開飯店。"
     }
   ],
 
@@ -127,12 +127,12 @@ const defaultTripData = {
       spots: [
         {
           id: "s1-1",
-          time: "下午 (視航班)",
-          title: "抵達關西機場，搭 Haruka 到京都",
+          time: "08:05 - 15:30",
+          title: "CI156 桃園 ➔ 關西，搭 Haruka 到京都",
           category: "transport",
           location: "關西機場 ➔ 京都站",
           mapQuery: "京都站",
-          note: "機票尚未訂。Haruka 約 75 分鐘到京都站，再搭地下鐵或計程車到飯店。\n先不要把行程排太滿，視抵達時間彈性調整。",
+          note: "CI156 桃園 08:05 起飛，關西 11:35 抵達（第一航廈）。入境領行李約 1–1.5 小時，Haruka 到京都站約 75–80 分鐘，預計 14:30–15:30 到達。\n到京都站後搭地下鐵或計程車到飯店約 15–20 分鐘。",
           completed: false,
           transitToNext: "京都站到飯店約 15–20 分鐘"
         },
@@ -450,27 +450,38 @@ const defaultTripData = {
       dayNumber: 7,
       date: "2026-12-23",
       weekday: "週三",
-      theme: "退房・羽田機場・返回台北",
+      theme: "上午自由・羽田 14:15 返回台北",
       weather: "約 4–12°C",
       spots: [
         {
           id: "s7-1",
-          time: "依航班",
-          title: "退房，前往羽田機場",
-          category: "transport",
-          location: "汐留 ➔ 羽田機場",
-          mapQuery: "羽田空港",
-          note: "新橋搭都營淺草線（部分班次直通京急）約 30 分鐘，或濱松町搭東京單軌電車。請在起飛前 2.5–3 小時抵達。\n⚠️ 回程機票尚未訂。",
-          completed: false
+          time: "上午",
+          title: "退房前的早晨（自由安排）",
+          category: "attraction",
+          location: "東京",
+          mapQuery: "東京",
+          note: "最晚 10:30–11:00 要離開飯店。早餐、散步或補買伴手禮，行李先整理好。",
+          completed: false,
+          transitToNext: "前往羽田機場第三航廈，約 30 分鐘"
         },
         {
           id: "s7-2",
-          time: "依航班",
-          title: "羽田起飛，返回台北",
+          time: "約 11:30 - 12:00",
+          title: "抵達羽田第三航廈，辦理登機",
+          category: "transport",
+          location: "羽田機場第三航廈",
+          mapQuery: "羽田空港 第3ターミナル",
+          note: "CI221 14:15 起飛，建議 12:00 前抵達。退稅與伴手禮先處理好。",
+          completed: false
+        },
+        {
+          id: "s7-3",
+          time: "14:15 - 17:15",
+          title: "CI221 羽田 ➔ 台北松山",
           category: "transport",
           location: "羽田機場",
           mapQuery: "羽田空港 国際線ターミナル",
-          note: "退稅與伴手禮先處理好。",
+          note: "17:15 抵達松山機場第一航廈，搭捷運或計程車回家。",
           completed: false
         }
       ]
@@ -481,7 +492,7 @@ const defaultTripData = {
     {
       category: "出發前要辦的事（訂位與預約）",
       items: [
-        { id: "t1", name: "訂去程機票（12/17 抵達）與回程羽田（12/23）", checked: false },
+        { id: "t1", name: "機票已訂：去程 CI156（12/17）與回程 CI221（12/23）", checked: true },
         { id: "t2", name: "11/10 10:00 (日本時間) 搶吉卜力 12/21 14:00 場次，2 張", checked: false },
         { id: "t3", name: "訂東京 Conrad Tokyo 12/20–12/23 三晚（先選可免費取消）", checked: false },
         { id: "t5", name: "訂新幹線京都→東京（12/20）", checked: false },
