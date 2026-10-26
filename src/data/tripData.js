@@ -12,7 +12,7 @@ const defaultTripData = {
   homeCurrencySymbol: "NT$",
   exchangeRate: 1,
   members: ["Aimee", "Farl"],
-  overviewNote: "12/17 抵達京都（3 晚）；12/18 任天堂博物館（10:00 入場）＋宇治＋伏見稻荷；12/19 嵐山・錦市場・清水寺；12/20 新幹線到東京，入住 Tokyu Stay 新橋（3 晚），下午 teamLab Planets；12/21 14:00 吉卜力美術館，傍晚澀谷，20:00 朋友聚餐；12/22 跟朋友一家一起行動；12/23 羽田 14:15 返台北。",
+  overviewNote: "12/17 抵達京都（3 晚）；12/18 任天堂博物館（10:00 入場）＋宇治＋伏見稻荷；12/19 嵐山・錦市場・清水寺；12/20 新幹線到東京，入住 Tokyu Stay 新橋（3 晚），下午 teamLab Planets；12/21 14:00 吉卜力美術館，傍晚澀谷，20:00 朋友聚餐；12/22 跟 Fangwei 一家一起行動；12/23 羽田 14:15 返台北。",
 
   accommodations: [
     {
@@ -458,16 +458,16 @@ const defaultTripData = {
       "dayNumber": 6,
       "date": "2026-12-22",
       "weekday": "週二",
-      "theme": "跟朋友一家一起行動",
+      "theme": "跟 Fangwei 一家一起行動",
       "weather": "約 5–12°C",
       "spots": [
         {
           "id": "s6-1",
           "time": "10:00 - 19:00",
-          "title": "跟朋友一家一起行動（待討論）",
+          "title": "跟 Fangwei 一家一起行動（待討論）",
           "category": "activity",
           "location": "",
-          "mapQuery": "跟朋友一家一起行動（待討論）",
+          "mapQuery": "跟 Fangwei 一家一起行動（待討論）",
           "note": "⚠️ 待確認\n沒有特別想去的地方，可以把 SMALL WORLDS 挪來這天",
           "completed": false,
           "transitToNext": "回新橋・約 30 分（估）"
@@ -542,7 +542,7 @@ const defaultTripData = {
       "items": [
         {
           "id": "t03",
-          "name": "11/07 跟朋友一家確認 12/22 要去哪",
+          "name": "11/07 跟 Fangwei 一家確認 12/22 要去哪",
           "checked": false
         },
         {
