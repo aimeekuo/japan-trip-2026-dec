@@ -12,7 +12,7 @@ const defaultTripData = {
   homeCurrencySymbol: "NT$",
   exchangeRate: 1,
   members: ["Aimee", "Farl"],
-  overviewNote: "12/17 抵達京都（3 晚）；12/18 任天堂博物館（10:00 入場）＋宇治＋伏見稻荷；12/19 嵐山・錦市場・清水寺；12/20 新幹線到東京，入住 Tokyu Stay 新橋（3 晚），下午 teamLab Planets；12/21 14:00 吉卜力美術館，傍晚澀谷，20:00 朋友聚餐；12/22 跟 Fangwei 一家一起行動；12/23 羽田 14:15 返台北。",
+  overviewNote: "12/17 抵達京都（3 晚）；12/18 任天堂博物館（10:00 入場）＋宇治＋伏見稻荷；12/19 嵐山・錦市場・清水寺；12/20 新幹線到東京，入住 Tokyu Stay 新橋（3 晚），下午 teamLab Planets；12/21 14:00 吉卜力美術館，傍晚澀谷，20:00 朋友聚餐；12/22 跟 Fangwei 一家一起行動，13:15 寶可夢咖啡（已訂）；12/23 羽田 14:15 返台北。",
 
   accommodations: [
     {
@@ -463,12 +463,33 @@ const defaultTripData = {
       "spots": [
         {
           "id": "s6-1",
-          "time": "10:00 - 19:00",
-          "title": "跟 Fangwei 一家一起行動（待討論）",
+          "time": "10:00 - 12:30",
+          "title": "跟 Fangwei 一家一起行動（上午，待討論）",
           "category": "activity",
           "location": "",
           "mapQuery": "跟 Fangwei 一家一起行動（待討論）",
           "note": "⚠️ 待確認\n沒有特別想去的地方，可以把 SMALL WORLDS 挪來這天",
+          "completed": false,
+          "transitToNext": "前往日本橋高島屋・約 25 分（估）"
+        },
+        {
+          "id": "s6-pc",
+          "time": "12:55 - 14:45",
+          "title": "寶可夢咖啡 Tokyo（6 人）",
+          "category": "cafe",
+          "location": "日本橋高島屋 S.C. 東館 5F",
+          "mapQuery": "Pokémon Café Tokyo 日本橋高島屋",
+          "note": "✅ 已訂 13:15 入座，用餐 90 分鐘\n12:55–13:00 報到並出示確認信；超過 13:25 未到又沒聯絡會自動取消\n6 歲以上每人至少點一份",
+          "completed": false
+        },
+        {
+          "id": "s6-3",
+          "time": "14:45 - 19:00",
+          "title": "跟 Fangwei 一家一起行動（下午，待討論）",
+          "category": "activity",
+          "location": "",
+          "mapQuery": "跟 Fangwei 一家一起行動（待討論）",
+          "note": "⚠️ 待確認",
           "completed": false,
           "transitToNext": "回新橋・約 30 分（估）"
         },
