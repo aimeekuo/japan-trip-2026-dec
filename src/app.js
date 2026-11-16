@@ -3,7 +3,8 @@
  */
 
 (function () {
-  const STORAGE_KEY = 'trip_japan_2026_dec_v5';
+  // 快取鍵跟著資料的 id 與 dataVersion 走，更新資料時只要改 tripData.js
+  const STORAGE_KEY = `${window.defaultTripData.id}_v${window.defaultTripData.dataVersion}`;
 
   const CATEGORY_MAP = {
     attraction: { label: '景點', icon: 'map-pin', bg: 'bg-copper-50', text: 'text-copper-700', border: 'border-copper-200' },

@@ -1,7 +1,9 @@
 // 2026 年底 京都・東京（12/17–12/23）
-// 機票、京都與東京住宿已訂；新幹線、吉卜力、teamLab 尚未訂；交通時間為估算，請以實際查詢為準
+// 機票、京都與東京住宿、Haruka、teamLab、吉卜力、12/21 鳥かぜ已訂；新幹線已預訂待 11/20 確認；交通時間為估算，請以實際查詢為準
 const defaultTripData = {
   id: "trip-japan-2026-dec",
+  // 資料有更新就把 dataVersion 加 1，手機會丟掉舊快取改載入新資料
+  dataVersion: 6,
   title: "🍁 2026 日本行 京都・東京 7D6N",
   destination: "日本 京都・東京",
   startDate: "2026-12-17",
@@ -40,7 +42,7 @@ const defaultTripData = {
       checkIn: "2026-12-20 15:00",
       checkOut: "2026-12-23 11:00",
       bookingRef: "已訂（可免費取消方案）",
-      notes: "入住、退房時間暫定 15:00／11:00，以訂房確認信為準。\n12/20 中午先寄放行李，搭百合海鷗號去 teamLab Planets。\n12/23 搭都營淺草線直通京急到羽田第三航廈，約 35 分鐘。",
+      notes: "入住、退房時間暫定 15:00／11:00，以訂房確認信為準。\n12/20 中午先寄放行李，搭百合海鷗號去 teamLab Planets。\n12/23 搭都營淺草線直通京急到羽田第三航廈，約 35 分鐘。\n官網有 2026 年 9 月客房整修公告，可打電話確認 12/20–12/23 不受影響。",
       mapQuery: "Tokyu Stay Shimbashi"
     }
   ],
@@ -60,6 +62,18 @@ const defaultTripData = {
       notes: "抵達後入境、領行李約 1–1.5 小時，再搭 Haruka 到京都約 75–80 分鐘，預計 14:30–15:30 抵達飯店（15:00 起可入住）。\n兩人同班機。"
     },
     {
+      type: "Haruka 關西機場 ➔ 京都",
+      date: "2026-12-17 (週四)",
+      flightNo: "電子票（QR Code 乘車）・指定席待劃位",
+      airline: "JR 西日本",
+      departureAirport: "關西機場站",
+      departureTime: "約 12:35 後",
+      arrivalAirport: "京都站（約 80 分）",
+      arrivalTime: "待劃位",
+      bookingRef: "✅ 已購票・成人 2 張",
+      notes: "Klook 訂單 ERB944041，NT$1,168（NT$584 × 2）。兌換期至 2027/3/31，兌換前可免費取消。\n⚠️ 綁定後可能就算已兌換、不能再免費取消（未查證），12/17 前綁好即可。\n綁定：Klook 憑證 →「How to check in」→ 點 Adult-1 →「Link this ticket to your account」→ 註冊 WEST QR（Email 帳號、8–36 字元含大小寫與數字的密碼、5 分鐘內輸入 Email 驗證碼）→ Register。再點 Adult-2，用同一帳號登入綁定。綁定後不能換帳號。\n劃位：乘車前 30 天（11/17）起，在 WEST QR 選票 →「選座」→ 選日期、班次、座位 →「確定」，兩張要各劃一次。出發前可不限次數改位或取消。\n當天：每張票都要按「開始使用」才能進站；預訂班次發車前 3 分鐘還沒按，指定席會自動取消。QR Code 會更新，不能截圖。兩人用一支手機時，同行者先過閘門。"
+    },
+    {
       type: "任天堂博物館門票",
       date: "2026-12-18 (週五)",
       flightNo: "10:00–10:30 入場時段",
@@ -74,38 +88,38 @@ const defaultTripData = {
     {
       type: "新幹線 京都 ➔ 東京",
       date: "2026-12-20 (週日)",
-      flightNo: "Nozomi（待選班次）",
+      flightNo: "Nozomi 4・指定席普通車廂",
       airline: "JR 東海",
       departureAirport: "京都站",
-      departureTime: "約 9:00 前後",
-      arrivalAirport: "東京站（約 2 小時 15 分），再到新橋入住",
-      arrivalTime: "待定",
-      bookingRef: "⚠️ 尚未訂・11/20 前訂好",
-      notes: "可用 SmartEX 或 EX 預約。抵達東京站後，轉 JR 到新橋（約 5 分鐘），再步行到 Tokyu Stay 新橋寄放行李。選 E 座（右側）看富士山。"
+      departureTime: "09:21",
+      arrivalAirport: "東京站（2 小時 12 分），再到新橋寄放行李",
+      arrivalTime: "11:33",
+      bookingRef: "🕒 已預訂・待 11/20 確認",
+      notes: "Klook 訂單 AAX299321，成人 2 位，NT$6,266（酷幣折抵 NT$30）。\n11/20 正式售票後才會確認出票，確認前可免費取消。\n抵達東京站後，轉 JR 到新橋（約 5 分鐘），再步行到 Tokyu Stay 新橋寄放行李。E 座（右側）看得到富士山。"
     },
     {
       type: "teamLab Planets 門票",
       date: "2026-12-20 (週日)",
-      flightNo: "14:00 時段",
+      flightNo: "14:00–14:30 入場",
       airline: "teamLab Planets TOKYO",
       departureAirport: "新橋站 ➔ 百合海鷗號",
-      departureTime: "約 13:25",
+      departureTime: "約 13:10",
       arrivalAirport: "新豐洲站，步行約 5 分鐘",
       arrivalTime: "14:00",
-      bookingRef: "⚠️ 未購票・日期時段制",
-      notes: "週日下午熱門，開賣後盡快訂。館內要涉水到膝蓋，穿可捲起的褲子。"
+      bookingRef: "✅ 已購票・成人 2 張",
+      notes: "Klook 購買，NT$2,140。查詢號碼 PG6740710056355300，2 人一起入場。\n不能取消或退款。入場時段 14:00–14:30，館內停留不限時。\n赤腳入館，水深會到膝蓋，館內可免費借五分短褲；免費置物櫃 23×34×37 cm，放不下的行李另外上鎖保管。\n禁止閃光燈與 30 cm 以上的自拍棒、腳架。"
     },
     {
       type: "吉卜力美術館門票",
       date: "2026-12-21 (週一)",
-      flightNo: "14:00 入場（首選）",
+      flightNo: "14:00 入場",
       airline: "三鷹之森吉卜力美術館",
       departureAirport: "吉祥寺站，步行約 15 分鐘",
       departureTime: "約 13:30",
       arrivalAirport: "美術館",
       arrivalTime: "14:00",
-      bookingRef: "⚠️ 未購票・11/10 10:00 (日本時間) 開賣",
-      notes: "預約制、日期時段制，現場不售票。每人都要買，入場姓名需與護照一致。備選時段 12:00 或 16:00。\n台灣可透過代理商購買（價格較高）；請以官方公告為準。"
+      bookingRef: "✅ 已購票・成人 2 張",
+      notes: "l-tike 訂單 9144899557，¥2,000＋系統費 ¥220＝¥2,220。\n入場要出示團長 Guo Meng Jia 的護照，兩人一起入場。\n電子票（MOALA Ticket）在日本境外打不開，到日本才能顯示：先把票券連結存成書籤，入口可能沒有免費 Wi-Fi，進場前先打開。\n館內攝影限制請遵守規定。"
     },
     {
       type: "回程機票",
@@ -150,11 +164,11 @@ const defaultTripData = {
         {
           "id": "s1-2",
           "time": "11:35 - 12:35",
-          "title": "入境、領行李、買 ICOCA／Haruka 票",
+          "title": "入境、領行李、啟用 Haruka 電子票",
           "category": "attraction",
           "location": "關西機場第一航廈",
           "mapQuery": "關西機場第一航廈",
-          "note": "",
+          "note": "✅ Haruka 已購（指定席 11/17 起劃位）\n出發當天在 JR West 網站按「立即使用」，用 QR Code 進站",
           "completed": false,
           "transitToNext": "Haruka 特急 關西機場 ➔ 京都站・約 80 分（估）\n京都站 ➔ 飯店（地鐵烏丸線或計程車）・約 25 分（估）"
         },
@@ -316,18 +330,18 @@ const defaultTripData = {
       "spots": [
         {
           "id": "s4-1",
-          "time": "08:30 - 08:55",
+          "time": "08:35 - 09:00",
           "title": "退房，飯店 ➔ 京都站",
           "category": "transport",
           "location": "地鐵或計程車",
           "mapQuery": "地鐵或計程車",
-          "note": "11:00 前退房\n約 25 分（估）",
+          "note": "約 25 分（估），09:00 前到京都站",
           "completed": false,
-          "transitToNext": "新幹線 Nozomi 京都 ➔ 東京・約 135 分（估）\nJR 東京 ➔ 新橋，步行到飯店・約 20 分（估）"
+          "transitToNext": "新幹線 Nozomi 4 京都 09:21 ➔ 東京 11:33（🕒 已預訂・待 11/20 確認）\nJR 東京 ➔ 新橋，步行到飯店・約 20 分（估）"
         },
         {
           "id": "s4-2",
-          "time": "11:35 - 11:50",
+          "time": "11:55 - 12:10",
           "title": "Tokyu Stay 新橋 寄放行李",
           "category": "hotel",
           "location": "新橋 4-23-1",
@@ -337,7 +351,7 @@ const defaultTripData = {
         },
         {
           "id": "s4-3",
-          "time": "11:50 - 12:50",
+          "time": "12:10 - 13:10",
           "title": "新橋午餐",
           "category": "food",
           "location": "新橋",
@@ -353,7 +367,7 @@ const defaultTripData = {
           "category": "activity",
           "location": "江東區豐洲",
           "mapQuery": "江東區豐洲",
-          "note": "⚠️ 待訂\n日期時段制，週日人多，早點訂",
+          "note": "✅ 已購票\n14:00–14:30 入場，2 人一起入場\n赤腳入館，水會到膝蓋",
           "completed": false,
           "transitToNext": "百合海鷗號 新豐洲 ➔ 有明テニスの森・約 15 分（估）"
         },
@@ -426,7 +440,7 @@ const defaultTripData = {
           "category": "activity",
           "location": "三鷹市下連雀",
           "mapQuery": "三鷹市下連雀",
-          "note": "⚠️ 待訂\n11/10 開賣",
+          "note": "✅ 已購票\n成人 2 張，憑團長護照一起入場\n電子票到日本才能顯示，先存書籤",
           "completed": false,
           "transitToNext": "步行回吉祥寺站・約 20 分（估）\n京王井之頭線 吉祥寺 ➔ 澀谷・約 25 分（估）"
         },
@@ -447,8 +461,8 @@ const defaultTripData = {
           "title": "朋友聚餐：鳥かぜ 第二場",
           "category": "food",
           "location": "中目黑・青葉台",
-          "mapQuery": "中目黑・青葉台",
-          "note": "⚠️ 待確認\n11 月開放訂位再確認。訂不到改 USHIGORO 表參道店。訂位時先說明飲食限制",
+          "mapQuery": "東京都目黒区青葉台1-15-3",
+          "note": "✅ 已訂（予約 ID J9DKSUNG）\nBecky 已訂好 20:00 おまかせコース，カウンター 3 人\n目黑區青葉台 1-15-3 AK-4 ビル B1F\n訂位的過敏欄是空白，飲食限制記得另外跟店家說",
           "completed": false,
           "transitToNext": "日比谷線 中目黑 ➔ 銀座，步行回新橋・約 35 分（估）"
         }
@@ -569,32 +583,37 @@ const defaultTripData = {
         {
           "id": "t04",
           "name": "11/07 請 朋友 留意鳥かぜ 11 月開放訂位的日期",
-          "checked": false
+          "checked": true
         },
         {
           "id": "t05",
           "name": "11/10 搶吉卜力 12/21 14:00 門票（2 張）",
-          "checked": false
+          "checked": true
         },
         {
           "id": "t06",
           "name": "11/10 訂 teamLab Planets 12/20 14:00 時段",
+          "checked": true
+        },
+        {
+          "id": "t20",
+          "name": "11/17 起到 JR West 綁定 Haruka 電子票，劃 12/17 指定席（兩張綁同一帳號）",
           "checked": false
         },
         {
           "id": "t09",
-          "name": "11/20 訂新幹線 12/20 京都 ➔ 東京 09:00 左右 Nozomi",
+          "name": "11/20 確認新幹線 Nozomi 4 京都 09:21 已出票（Klook AAX299321）",
           "checked": false
         },
         {
           "id": "t07",
-          "name": "11/30 訂鳥かぜ 12/21 第二場（約 20:00），跟朋友 三人",
-          "checked": false
+          "name": "11/30 訂鳥かぜ 12/21 第二場（約 20:00），跟朋友 三人（Becky 已訂）",
+          "checked": true
         },
         {
           "id": "t08",
-          "name": "11/30 備案：訂不到鳥かぜ就訂 USHIGORO 表參道店 20:00",
-          "checked": false
+          "name": "11/30 備案：訂不到鳥かぜ就訂 USHIGORO 表參道店 20:00（鳥かぜ已訂，不需要）",
+          "checked": true
         },
         {
           "id": "t10",
@@ -609,7 +628,7 @@ const defaultTripData = {
         {
           "id": "t12",
           "name": "12/10 買 Haruka 優惠票（關西機場 ➔ 京都）",
-          "checked": false
+          "checked": true
         },
         {
           "id": "t13",
@@ -680,6 +699,7 @@ const defaultTripData = {
         { id: "p2", name: "Visit Japan Web 入境 QR Code", checked: false },
         { id: "p3", name: "京都飯店訂房確認單", checked: true },
         { id: "p4", name: "任天堂博物館票券截圖", checked: true },
+        { id: "p16", name: "吉卜力電子票連結存書籤＋團長護照", checked: false },
         { id: "p5", name: "信用卡、日圓現金（住宿稅與小店現金）", checked: false },
         { id: "p6", name: "旅遊平安險、海外網卡／eSIM", checked: false }
       ]
