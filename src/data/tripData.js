@@ -1,9 +1,9 @@
 // 2026 年底 京都・東京（12/17–12/23）
-// 機票、京都與東京住宿、Haruka、teamLab、吉卜力、12/21 鳥かぜ已訂；新幹線已預訂待 11/20 確認；交通時間為估算，請以實際查詢為準
+// 機票、京都與東京住宿、Haruka、teamLab、吉卜力、12/21 鳥かぜ已訂；新幹線已訂；交通時間為估算，請以實際查詢為準
 const defaultTripData = {
   id: "trip-japan-2026-dec",
   // 資料有更新就把 dataVersion 加 1，手機會丟掉舊快取改載入新資料
-  dataVersion: 6,
+  dataVersion: 7,
   title: "🍁 2026 日本行 京都・東京 7D6N",
   destination: "日本 京都・東京",
   startDate: "2026-12-17",
@@ -88,14 +88,14 @@ const defaultTripData = {
     {
       type: "新幹線 京都 ➔ 東京",
       date: "2026-12-20 (週日)",
-      flightNo: "Nozomi 4・指定席普通車廂",
+      flightNo: "Nozomi 4・指定席普通車廂・11 號月台",
       airline: "JR 東海",
       departureAirport: "京都站",
       departureTime: "09:21",
       arrivalAirport: "東京站（2 小時 12 分），再到新橋寄放行李",
       arrivalTime: "11:33",
-      bookingRef: "🕒 已預訂・待 11/20 確認",
-      notes: "Klook 訂單 AAX299321，成人 2 位，NT$6,266（酷幣折抵 NT$30）。\n11/20 正式售票後才會確認出票，確認前可免費取消。\n抵達東京站後，轉 JR 到新橋（約 5 分鐘），再步行到 Tokyu Stay 新橋寄放行李。E 座（右側）看得到富士山。"
+      bookingRef: "✅ 已出票・成人 2 位",
+      notes: "Klook 訂單 AAX299321，11/20 已確認出票。成人 2 位 NT$6,084＋偏好座位服務費 NT$182＝NT$6,266（酷幣折抵 NT$30）。\n座位偏好選的是「特大行李放置處附帶席」，確認信沒有寫車廂與座位號，不一定是看得到富士山的 E 側。\n月台 11（可能更動，當天看站內顯示）。\n進出站都用同一個 QR Code 過閘門；先下載車票，並分享給同行者。\n抵達東京站後，轉 JR 到新橋（約 5 分鐘），再步行到 Tokyu Stay 新橋寄放行李。"
     },
     {
       type: "teamLab Planets 門票",
@@ -337,7 +337,7 @@ const defaultTripData = {
           "mapQuery": "地鐵或計程車",
           "note": "約 25 分（估），09:00 前到京都站",
           "completed": false,
-          "transitToNext": "新幹線 Nozomi 4 京都 09:21 ➔ 東京 11:33（🕒 已預訂・待 11/20 確認）\nJR 東京 ➔ 新橋，步行到飯店・約 20 分（估）"
+          "transitToNext": "新幹線 Nozomi 4 京都 09:21 ➔ 東京 11:33（✅ 已出票，11 號月台）\nJR 東京 ➔ 新橋，步行到飯店・約 20 分（估）"
         },
         {
           "id": "s4-2",
@@ -603,7 +603,7 @@ const defaultTripData = {
         {
           "id": "t09",
           "name": "11/20 確認新幹線 Nozomi 4 京都 09:21 已出票（Klook AAX299321）",
-          "checked": false
+          "checked": true
         },
         {
           "id": "t07",
